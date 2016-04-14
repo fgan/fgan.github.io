@@ -1,0 +1,294 @@
+html, body {
+  font-family: Helvetica Neue, Arial, Times New Roman;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #505050;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-weight: 200; }
+h2 { font-weight: 200; }
+h3 { font-weight: 200; }
+a, a:hover { text-decoration: none; color: #505050; }
+a { -webkit-transition: color 0.5s; transition: color 0.5s; }
+
+.bold { font-weight: 600; }
+.uppercase { text-transform: uppercase; }
+
+/* menu */
+.menu {
+  padding: 0.5rem 0 2rem 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .menu {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .menu {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu .logo {
+  height: 4rem;
+  max-width: 15rem;
+}
+@media (min-width: 768px) {
+  .menu .logo {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 992px) {
+  .menu .logo {
+    max-width: 30rem;
+  }
+}
+
+.menu a {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .menu a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.menu a:hover {
+  color: darkseagreen;
+}
+
+/* index page call-to-action */
+.landing-page {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.landing-page .icon {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  .splash-text {
+    margin-top: 8rem;
+    text-align: left;
+  }
+}
+
+.splash-section .splash-image {
+  height: 20rem;
+}
+
+.splash-section .logo {
+  height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 20rem;
+}
+
+@media (min-width: 768px) {
+  .splash-section .logo {
+    height: 6rem;
+  }
+}
+@media (min-width: 992px) {
+  .splash-section .logo {
+    height: 8rem;
+  }
+}
+
+/* card */
+.card-section {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .card-section {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card .content {
+  background-color: whitesmoke;
+  padding: 1rem 0.5rem;
+}
+@media (min-width: 992px) {
+  .card .content {
+    flex-grow: 1;
+  }
+}
+
+.card .content h3, .card .content p {
+  margin: 0.5rem 0;
+}
+
+.card .link {
+  padding: 1rem 0.5rem;
+  color: white;
+  display: block;
+  text-transform: uppercase;
+}
+
+.card .link.steelblue { background-color: lightsteelblue; }
+.card .link.coral { background-color: lightcoral; }
+.card .link.darkseagreen { background-color: darkseagreen; }
+
+/* form submission */
+#error {
+  color: red;
+}
+
+form .form-input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+form .form-input label {
+  display: block;
+  text-align: left;
+}
+
+form .form-input textarea, form .form-input input {
+  width: 100%;
+  border: 2px solid lightgrey;
+  outline: none;
+  padding: 0.5rem;
+}
+
+form .form-input textarea:focus, form .form-input input:focus {
+  border: 2px solid darkseagreen;
+}
+
+form .form-input textarea {
+  resize: none;
+  height: 6rem;
+}
+
+form .form-input button {
+  color: white;
+  background-color: #505050;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  transition: background-color 0.5s;
+}
+
+form .form-input button:hover {
+  background-color: darkseagreen;
+}
+
+form .form-input button:focus {
+  outline: none;
+}
+
+/* instructor profile */
+.director, .instructors, .curriculum {
+  padding: 2rem 0;
+}
+
+.instructors, .profiles {
+}
+
+.director img {
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50%;
+}
+
+.director p, .instructors p, .curriculum p {
+  text-align: left;
+}
+
+.profile-image {
+  margin-top: 2.5rem;
+}
+
+.profile-image img {
+  position: relative;
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .profile-image img {
+  }
+}
+
+@media (min-width: 992px) {
+  .profile-image img {
+  }
+}
+
+.profile-text {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.profile-text h2, .curriculum-card h3 {
+  margin-top: 0;
+}
+
+/* curriculum page */
+.infoHeading {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .infoHeading {
+      text-align: right;
+  }
+  .infoText {
+    text-align: left;
+  }
+}
+
+.courseOverview {
+  margin: 0 1rem;
+}
+.courseOverview .wrapper {
+  margin-top: 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid lightgrey;
+}
+
+.copyright {
+  margin: 1rem 0;
+}

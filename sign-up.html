@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Berkeley Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu bar -->
+      <div class="menu row">
+        <a href="./index.html" class="col-xs-12 col-sm-12 col-md-4"><img class="logo" src="img/berkeley-exchange-logo.svg" alt=""></a>
+        <a href="./index.html#about_anchor" class="col-xs-offset-1 col-xs-5 col-sm-offset-0 col-sm-3 col-md-2">About Us</a>
+        <a href="./instructors.html" class="col-xs-5 col-sm-3 col-md-2">Instructors</a>
+        <a href="./curriculum.html" class="col-xs-offset-1 col-xs-5 col-sm-offset-0 col-sm-3 col-md-2">Curriculum</a>
+        <a href="./sign-up.html" class="col-xs-5 col-sm-3 col-md-2">Sign Up</a>
+      </div>
+
+      <!-- sign-up form -->
+      <div id="error">
+        <div id="nameError" style="display: none;">Please provide your name.</div>
+        <div id="emailError" style="display: none;">Please provide a valid email.</div>
+        <div id="phoneError" style="display: none;">Please provide a valid phone number.</div>
+      </div>
+
+      <div class="row">
+        <h1 class="bold">Sign Up</h1>
+        <p>Sign up to receive more information about the program!</p>
+
+        <form id="signUpForm" action="https://docs.google.com/forms/d/1KfZk9lBagWmpDJEYl2AiJakL6ucbCQrkpsafnWHOuI4/formResponse" target="dummy" method="POST">
+          <div class="form-input col-md-offset-3 col-md-2">
+            <label for="formName">Name</label>
+            <input id="formName" type="text" name="entry.1350654240" placeholder="First and Last Name">
+          </div>
+
+          <div class="form-input col-md-2">
+            <label for="formEmail">E-mail</label>
+            <input id="formEmail" type="email" name="entry.78421369" placeholder="name@example.com" />
+          </div>
+
+          <div class="form-input col-md-2">
+            <label for="formTelephone">Phone Number</label>
+            <input id="formTelephone" type="tel" name="entry.819434865" maxlength="14" />
+          </div>
+
+          <div class="form-input col-md-offset-3 col-md-6">
+            <label for="formMessage">Desired Goals</label>
+            <textarea id="formMessage" name="entry.804456699"></textarea>
+          </div>
+
+          <div class="form-input col-md-offset-3 col-md-6">
+            <button class="col-md-12 bold">Sign Up</button>
+          </div>
+        </form>
+
+        <iframe id="dummy" name="dummy" style="display: none;"></iframe>
+      </div>
+
+      <div id="thankYou" class="row" style="display: none;">
+        <h1 class="bold">Thank You for signing up!</h1>
+        <p>We will email you with more information about our class.</p>
+      </div>
+
+      <!-- sitemap footer -->
+      <div class="footer row">
+        <h3 class="col-md-12">Organization</h3>
+        <a class="col-xs-3" href="./index.html">About Us</a>
+        <a class="col-xs-3" href="./instructors.html">Our Instructors</a>
+        <a class="col-xs-3" href="./curriculum.html">Our Curriculum</a>
+        <a class="col-xs-3" href="./sign-up.html">Get Started</a>
+      </div>
+
+      <div class="copyright row">
+        <p>&#169; 2016 Berkeley Exchange. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </body>
+</html>
